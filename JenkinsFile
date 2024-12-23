@@ -24,7 +24,7 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                sshagent(['web-server']) {
+                sshagent(['Apache']) {
                     sh '''
                     # Transfer files to the Apache2 server
                     scp -o StrictHostKeyChecking=no -r * ubuntu@16.171.232.2:/var/www/html/
