@@ -9,8 +9,7 @@ pipeline {
                     doGenerateSubmoduleConfigurations: false,
                     extensions: [],
                     userRemoteConfigs: [[
-                        url: 'https://github.com/muneebahmedayub/devops-hello-world-assignment.git',
-                        credentialsId: 'github' // Replace with your credential ID
+                        url: 'https://github.com/ramsha-001/TOCs_Project.git'
                     ]]
                 ])
             }
@@ -28,7 +27,7 @@ pipeline {
                 sshagent(['web-server']) {
                     sh '''
                     # Transfer files to the Apache2 server
-                    scp -o StrictHostKeyChecking=no -r * ubuntu@13.60.223.61:/var/www/html/
+                    scp -o StrictHostKeyChecking=no -r * ubuntu@16.171.232.2:/var/www/html/
                     '''
                 }
             }
