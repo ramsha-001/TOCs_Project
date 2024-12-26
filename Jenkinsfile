@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy HTML, CSS, and JS') {
             steps {
-                sshagent(['ubuntu']) {
+                sshagent(['Apache']) {
                     script {
                         echo 'Deploying web files to the remote Apache server...'
 
