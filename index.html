@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Enhanced Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+      <form id="form">
+        <input 
+          type="text" 
+          class="input" 
+          id="input" 
+          placeholder="What do you need to do?" 
+          autocomplete="off" 
+        />
+        <button type="submit" class="add-btn">Add Todo</button>
+      </form>
+      <ul class="todos" id="todos"></ul>
+      <small>Click to mark as completed. <br />Right-click to delete.</small>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
