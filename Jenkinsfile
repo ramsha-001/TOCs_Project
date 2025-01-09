@@ -31,10 +31,6 @@ pipeline {
 
                     // Check if index.html is accessible
                     sh 'curl http://ip-172-31-30-70/index.html'
-
-                    // Optionally verify CSS and JS files (uncomment if needed)
-                    // sh 'curl http://ip-172-31-30-70/style.css'
-                    // sh 'curl http://ip-172-31-30-70/script.js'
                 }
             }
         }
